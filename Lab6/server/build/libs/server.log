@@ -1,0 +1,224 @@
+110  [main] INFO  log.Log - Hello, world!
+390  [main] INFO  log.Log - Открыт канал на порте 7182
+63088 [main] INFO  log.Log - Соединен с клиентом по адресу /127.0.0.1:54028
+63095 [main] INFO  log.Log - Десериализация запроса
+63100 [main] INFO  log.Log - Получен запрос
+63100 [main] INFO  log.Log - Обработка запроса
+63100 [main] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+63100 [main] INFO  log.Log - Формирование запроса с отрицательным ответом
+63100 [main] INFO  log.Log - Отправка запроса
+63100 [main] INFO  log.Log - Сериализация ответа
+63102 [main] INFO  log.Log - Запрос отправлен
+63102 [main] INFO  log.Log - Request{commandName='show', studygroup=null}
+63104 [main] INFO  log.Log - Открыт канал на порте 7182
+63139 [main] INFO  log.Log - Соединен с клиентом по адресу /127.0.0.1:54031
+63140 [main] INFO  log.Log - Десериализация запроса
+63140 [main] INFO  log.Log - Получен запрос
+63140 [main] INFO  log.Log - Обработка запроса
+63140 [main] INFO  log.Log - Попытка обработать команду show
+63145 [main] INFO  log.Log - Отправка запроса
+63145 [main] INFO  log.Log - Сериализация ответа
+63146 [main] INFO  log.Log - Запрос отправлен
+63146 [main] INFO  log.Log - Request{commandName='show', studygroup=null}
+63147 [main] INFO  log.Log - Открыт канал на порте 7182
+68667 [main] INFO  log.Log - Соединен с клиентом по адресу /127.0.0.1:54040
+68668 [main] INFO  log.Log - Десериализация запроса
+68668 [main] INFO  log.Log - Получен запрос
+68668 [main] INFO  log.Log - Обработка запроса
+68668 [main] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+68668 [main] INFO  log.Log - Формирование запроса с положительным ответом
+68668 [main] INFO  log.Log - Отправка запроса
+68668 [main] INFO  log.Log - Сериализация ответа
+68668 [main] INFO  log.Log - Запрос отправлен
+68668 [main] INFO  log.Log - Request{commandName='add', studygroup=null}
+68669 [main] INFO  log.Log - Открыт канал на порте 7182
+69170 [main] INFO  log.Log - Соединен с клиентом по адресу /127.0.0.1:54041
+192082 [main] ERROR log.Log - error
+java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at request.RequestReaderImpl.readBytes(RequestReaderImpl.java:37)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:22)
+	at server.Application.start(Application.java:64)
+	at server.Server.main(Server.java:11)
+192084 [main] INFO  log.Log - Открыт канал на порте 7182
+95   [main] ERROR log.Log - Expected arguments: port file_name
+218  [main] INFO  log.Log - Hello, world!
+2575 [main] INFO  log.Log - Successfully connected to the data base.
+10845 [Thread-2] INFO  log.Log - Десериализация запроса
+10856 [Thread-2] INFO  log.Log - Получен запрос
+10858 [Thread-2] INFO  log.Log - Request{commandName='show', studygroup=null}
+10859 [pool-1-thread-1] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+10859 [pool-1-thread-1] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$16(Application.java:143), java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source), java.util.concurrent.FutureTask.run(Unknown Source), java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source), java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source), java.lang.Thread.run(Unknown Source)]
+10860 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+10860 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+10862 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+20691 [Thread-3] INFO  log.Log - Десериализация запроса
+20693 [Thread-3] INFO  log.Log - Получен запрос
+20694 [Thread-3] INFO  log.Log - Request{commandName='null', studygroup=null}
+20775 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+20775 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+20776 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+40797 [Thread-4] INFO  log.Log - Десериализация запроса
+40797 [Thread-4] INFO  log.Log - Получен запрос
+40798 [Thread-4] INFO  log.Log - Request{commandName='null', studygroup=null}
+40880 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+40880 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+40880 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+43878 [Thread-5] INFO  log.Log - Десериализация запроса
+43879 [Thread-5] INFO  log.Log - Получен запрос
+43880 [Thread-5] INFO  log.Log - Request{commandName='show', studygroup=null}
+43895 [pool-1-thread-4] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+43895 [pool-1-thread-4] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$16(Application.java:143), java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source), java.util.concurrent.FutureTask.run(Unknown Source), java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source), java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source), java.lang.Thread.run(Unknown Source)]
+43896 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+43896 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+43896 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+54962 [Thread-6] INFO  log.Log - Десериализация запроса
+54962 [Thread-6] INFO  log.Log - Получен запрос
+54962 [Thread-6] INFO  log.Log - Request{commandName='null', studygroup=null}
+54973 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+54973 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+54973 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+56934 [Thread-7] INFO  log.Log - Десериализация запроса
+56934 [Thread-7] INFO  log.Log - Получен запрос
+56934 [Thread-7] INFO  log.Log - Request{commandName='show', studygroup=null}
+56935 [pool-1-thread-1] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+56935 [pool-1-thread-1] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$16(Application.java:143), java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source), java.util.concurrent.FutureTask.run(Unknown Source), java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source), java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source), java.lang.Thread.run(Unknown Source)]
+56935 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+56935 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+56935 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+62612 [Thread-8] INFO  log.Log - Десериализация запроса
+62615 [Thread-8] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.io.ObjectInputStream.<init>(Unknown Source)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:43)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:36)
+	at server.Application.lambda$readRequest$15(Application.java:130)
+	at java.lang.Thread.run(Unknown Source)
+389673 [Thread-9] INFO  log.Log - Десериализация запроса
+389673 [Thread-9] INFO  log.Log - Получен запрос
+389673 [Thread-9] INFO  log.Log - Request{commandName='null', studygroup=null}
+389676 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+389676 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+389676 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+393827 [Thread-10] INFO  log.Log - Десериализация запроса
+393828 [Thread-10] INFO  log.Log - Получен запрос
+393828 [Thread-10] INFO  log.Log - Request{commandName='show', studygroup=null}
+393830 [pool-1-thread-3] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+393830 [pool-1-thread-3] INFO  log.Log - Формирование запроса с отрицательным ответом
+393831 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+393831 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+393831 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+393853 [Thread-11] INFO  log.Log - Десериализация запроса
+393854 [Thread-11] INFO  log.Log - Получен запрос
+393854 [Thread-11] INFO  log.Log - Request{commandName='show', studygroup=null}
+393855 [pool-1-thread-4] INFO  log.Log - Попытка обработать команду show
+393864 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+393864 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+393864 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+397518 [Thread-12] INFO  log.Log - Десериализация запроса
+397519 [Thread-12] INFO  log.Log - Получен запрос
+397519 [Thread-12] INFO  log.Log - Request{commandName='add', studygroup=null}
+397520 [pool-1-thread-5] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+397520 [pool-1-thread-5] INFO  log.Log - Формирование запроса с положительным ответом
+397521 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+397521 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+397521 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+415525 [Thread-13] INFO  log.Log - Десериализация запроса
+415526 [Thread-13] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.io.ObjectInputStream.<init>(Unknown Source)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:43)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:36)
+	at server.Application.lambda$readRequest$15(Application.java:130)
+	at java.lang.Thread.run(Unknown Source)
+535129 [Thread-14] INFO  log.Log - Десериализация запроса
+535130 [Thread-14] INFO  log.Log - Получен запрос
+535130 [Thread-14] INFO  log.Log - Request{commandName='null', studygroup=null}
+535133 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+535134 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+535134 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+537254 [Thread-15] INFO  log.Log - Десериализация запроса
+537254 [Thread-15] INFO  log.Log - Получен запрос
+537254 [Thread-15] INFO  log.Log - Request{commandName='show', studygroup=null}
+537255 [pool-1-thread-2] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+537255 [pool-1-thread-2] INFO  log.Log - Формирование запроса с отрицательным ответом
+537256 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+537256 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+537256 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+537259 [Thread-16] INFO  log.Log - Десериализация запроса
+537259 [Thread-16] INFO  log.Log - Получен запрос
+537260 [Thread-16] INFO  log.Log - Request{commandName='show', studygroup=null}
+537260 [pool-1-thread-3] INFO  log.Log - Попытка обработать команду show
+537261 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+537261 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+537261 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+539193 [Thread-17] INFO  log.Log - Десериализация запроса
+539194 [Thread-17] INFO  log.Log - Получен запрос
+539194 [Thread-17] INFO  log.Log - Request{commandName='add', studygroup=null}
+539196 [pool-1-thread-4] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+539196 [pool-1-thread-4] INFO  log.Log - Формирование запроса с положительным ответом
+539197 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+539197 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+539197 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+541433 [Thread-18] INFO  log.Log - Десериализация запроса
+541434 [Thread-18] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.io.ObjectInputStream.<init>(Unknown Source)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:43)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:36)
+	at server.Application.lambda$readRequest$15(Application.java:130)
+	at java.lang.Thread.run(Unknown Source)
+2542749 [Thread-19] INFO  log.Log - Десериализация запроса
+2542750 [Thread-19] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.io.ObjectInputStream.<init>(Unknown Source)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:43)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:36)
+	at server.Application.lambda$readRequest$15(Application.java:130)
+	at java.lang.Thread.run(Unknown Source)
+4721760 [Thread-20] INFO  log.Log - Десериализация запроса
+4721829 [Thread-20] INFO  log.Log - Получен запрос
+4721866 [Thread-20] INFO  log.Log - Request{commandName='add', studygroup=null}
+4721875 [pool-1-thread-5] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+4721936 [pool-1-thread-5] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$16(Application.java:143), java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source), java.util.concurrent.FutureTask.run(Unknown Source), java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source), java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source), java.lang.Thread.run(Unknown Source)]
+4721938 [pool-2-thread-4] INFO  log.Log - Отправка запроса
+4721938 [pool-2-thread-4] INFO  log.Log - Сериализация ответа
+4721949 [pool-2-thread-4] INFO  log.Log - Запрос отправлен
+4740821 [Thread-21] INFO  log.Log - Десериализация запроса
+4741039 [Thread-21] INFO  log.Log - Получен запрос
+4741058 [Thread-21] INFO  log.Log - Request{commandName='null', studygroup=null}
+4741192 [pool-2-thread-4] INFO  log.Log - Отправка запроса
+4741192 [pool-2-thread-4] INFO  log.Log - Сериализация ответа
+4741192 [pool-2-thread-4] INFO  log.Log - Запрос отправлен
+4744228 [Thread-22] INFO  log.Log - Десериализация запроса
+4744229 [Thread-22] INFO  log.Log - Получен запрос
+4744230 [Thread-22] INFO  log.Log - Request{commandName='add', studygroup=null}
+4744248 [pool-1-thread-2] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+4744266 [pool-1-thread-2] INFO  log.Log - Формирование запроса с положительным ответом
+4744266 [pool-2-thread-4] INFO  log.Log - Отправка запроса
+4744266 [pool-2-thread-4] INFO  log.Log - Сериализация ответа
+4744267 [pool-2-thread-4] INFO  log.Log - Запрос отправлен
+5008622 [Thread-23] INFO  log.Log - Десериализация запроса
+5088123 [Thread-24] INFO  log.Log - Десериализация запроса
+5088124 [Thread-24] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.io.ObjectInputStream.<init>(Unknown Source)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:43)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:36)
+	at server.Application.lambda$readRequest$15(Application.java:130)
+	at java.lang.Thread.run(Unknown Source)
+195  [main] ERROR log.Log - Expected arguments: port file_name
+154  [main] ERROR log.Log - Expected arguments: port file_name
+154  [main] ERROR log.Log - Expected arguments: port file_name
+151  [main] ERROR log.Log - Expected arguments: port file_name
+162  [main] ERROR log.Log - Expected arguments: port file_name
+160  [main] ERROR log.Log - Expected arguments: port file_name
