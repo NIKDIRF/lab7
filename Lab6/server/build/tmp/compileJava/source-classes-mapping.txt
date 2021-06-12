@@ -26,8 +26,8 @@ command/UpdateCommand.java
  command.UpdateCommand
 response/ResponseCreator.java
  response.ResponseCreator
-command/ExitCommand.java
- command.ExitCommand
+file/PSQLStudyGroupDAO.java
+ file.PSQLStudyGroupDAO
 connection/ConnectionListenerImpl.java
  connection.ConnectionListenerImpl
 util/CryptoModule.java
@@ -82,11 +82,11 @@ request/RequestHandlerImpl.java
  request.RequestHandlerImpl
 command/PrintAscendingCommand.java
  command.PrintAscendingCommand
-server/Server.java
- server.Server
-server/Application.java
- server.Application
 collection/HashSetControl.java
  collection.HashSetControl
-file/PSQLStudyGroupDAO.java
- file.PSQLStudyGroupDAO
+server/Application.java
+ server.Application
+server/Server.java
+ server.Server
+command/ExitCommand.java
+ command.ExitCommand

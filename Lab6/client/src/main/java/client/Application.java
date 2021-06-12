@@ -96,7 +96,7 @@ public class Application {
         }
     }
 
-    public Response communicateWithServer(String userString, Reader routeReader) throws IOException, ClassNotFoundException,
+    public Response communicateWithServer(String userString, Reader studyGroupReader) throws IOException, ClassNotFoundException,
             StudyGroupReadException, StudyGroupBuildException {
         SocketChannel socketChannel = connectionManager.getConnection();
         Request request = requestCreator.createStudyGroupRequest(userString, authModule.getUser());
@@ -108,7 +108,7 @@ public class Application {
 
 
         if (response.isStudyGroupRequired()) {
-            request.setStudyGroup(routeReader.read());
+            request.setStudyGroup(studyGroupReader.read());
         }
 
         request.setType(RequestType.COMMAND_REQUEST);

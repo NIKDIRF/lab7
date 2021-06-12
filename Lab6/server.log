@@ -2680,3 +2680,52 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
 	at server.Application.lambda$readRequest$0(Application.java:127)
 	at java.lang.Thread.run(Thread.java:748)
+161  [main] INFO  log.Log - Hello, world!
+660  [main] INFO  log.Log - Successfully connected to the data base.
+33414 [Thread-2] INFO  log.Log - Десериализация запроса
+33423 [Thread-2] INFO  log.Log - Получен запрос
+33423 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@1476c4a0, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:65122]}
+33434 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+33434 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+33435 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+64409 [Thread-3] INFO  log.Log - Десериализация запроса
+64409 [Thread-3] INFO  log.Log - Получен запрос
+64409 [Thread-3] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='add', studyGroup=null, user=studygroup.User@52821183, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:65122]}
+64410 [pool-1-thread-2] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+64410 [pool-1-thread-2] INFO  log.Log - Формирование запроса с положительным ответом
+64411 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+64411 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+64411 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+192477 [Thread-4] INFO  log.Log - Десериализация запроса
+192481 [Thread-4] INFO  log.Log - Получен запрос
+192481 [Thread-4] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='add', studyGroup=studygroup.StudyGroup@474a26ff, user=studygroup.User@6a399902, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:65122]}
+192483 [pool-1-thread-3] INFO  log.Log - Попытка обработать команду add
+192498 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+192498 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+192498 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+196467 [Thread-5] INFO  log.Log - Десериализация запроса
+196468 [Thread-5] INFO  log.Log - Получен запрос
+196468 [Thread-5] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=studygroup.User@36d9297, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:65122]}
+196469 [pool-1-thread-4] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+196469 [pool-1-thread-4] INFO  log.Log - Формирование запроса с отрицательным ответом
+196469 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+196469 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+196469 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+196470 [Thread-6] INFO  log.Log - Десериализация запроса
+196470 [Thread-6] INFO  log.Log - Получен запрос
+196471 [Thread-6] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='show', studyGroup=null, user=studygroup.User@425af0f1, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:65122]}
+196471 [pool-1-thread-5] INFO  log.Log - Попытка обработать команду show
+196476 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+196476 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+196476 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+228489 [Thread-7] INFO  log.Log - Десериализация запроса
+228491 [Thread-7] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+124  [main] INFO  log.Log - Hello, world!
+783  [main] INFO  log.Log - Successfully connected to the data base.

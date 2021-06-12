@@ -71,8 +71,8 @@ public class Application {
         UserAuthModule userAuthModule = new UserAuthModule(usersDAO, cryptoModule);
         requestHandler = new RequestHandlerImpl(commandInvoker, creator, userAuthModule);
         responseSender = new ResponseSenderImpl();
-        CollectionControl routeManager = new HashSetControl(creator, studyGroupDAO);
-        putCommands(commandInvoker, routeManager, creator, commandHistory);
+        CollectionControl studyGroupManager = new HashSetControl(creator, studyGroupDAO);
+        putCommands(commandInvoker, studyGroupManager, creator, commandHistory);
         putServerCommands(commandInvoker, connectionListener);
         consoleStart(commandInvoker);
         try {
