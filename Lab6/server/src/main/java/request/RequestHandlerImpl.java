@@ -47,12 +47,12 @@ public class RequestHandlerImpl implements RequestHandler{
         if (request.getUser() == null || !userAuthModule.authUser(request.getUser())) {
             throw new AuthException(ServerBundle.getString("exception.no_auth"));
         }
-        Log.getLogger().info(ServerBundle.getString("server.ask_route_requirement"));
+        Log.getLogger().info(ServerBundle.getString("server.ask_studyGroup_requirement"));
         if (commandInvoker.checkStudyGroupRequirement(request.getUserString())) {
-            Log.getLogger().info(ServerBundle.getString("server.ask_route_positive"));
+            Log.getLogger().info(ServerBundle.getString("server.ask_studyGroup_positive"));
             return responseCreator.createResponse("", true, true);
         } else {
-            Log.getLogger().info(ServerBundle.getString("server.ask_route_negative"));
+            Log.getLogger().info(ServerBundle.getString("server.ask_studyGroup_negative"));
             return responseCreator.createResponse("", true, false);
         }
     }

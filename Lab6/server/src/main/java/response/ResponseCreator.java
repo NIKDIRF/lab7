@@ -5,8 +5,8 @@ import studygroup.Response;
 public class ResponseCreator implements Creator{
     private Response response = new Response();
 
-    public Response createResponse(String message, boolean success, boolean routeRequired) {
-        return new Response(message, success, routeRequired);
+    public Response createResponse(String message, boolean success, boolean studyGroupRequired) {
+        return new Response(message, success, studyGroupRequired);
     }
 
     public Response createResponse() {

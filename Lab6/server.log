@@ -2729,3 +2729,342 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 	at java.lang.Thread.run(Thread.java:748)
 124  [main] INFO  log.Log - Hello, world!
 783  [main] INFO  log.Log - Successfully connected to the data base.
+168  [main] INFO  log.Log - Hello, world!
+624  [main] INFO  log.Log - Successfully connected to the data base.
+78594 [Thread-5] INFO  log.Log - Десериализация запроса
+78594 [Thread-4] INFO  log.Log - Десериализация запроса
+78594 [Thread-2] INFO  log.Log - Десериализация запроса
+78594 [Thread-3] INFO  log.Log - Десериализация запроса
+78599 [Thread-4] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+78599 [Thread-3] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+78599 [Thread-5] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+78603 [Thread-2] INFO  log.Log - Получен запрос
+78604 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@61657e18, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:59805]}
+78610 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+78610 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+78611 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+78611 [pool-2-thread-18] INFO  log.Log - Отправка запроса
+78611 [pool-2-thread-18] INFO  log.Log - Сериализация ответа
+78612 [pool-2-thread-18] INFO  log.Log - Запрос отправлен
+78612 [pool-2-thread-17] INFO  log.Log - Отправка запроса
+78612 [pool-2-thread-17] INFO  log.Log - Сериализация ответа
+78612 [pool-2-thread-17] INFO  log.Log - Запрос отправлен
+78612 [pool-2-thread-16] INFO  log.Log - Отправка запроса
+78612 [pool-2-thread-16] INFO  log.Log - Сериализация ответа
+78612 [pool-2-thread-16] INFO  log.Log - Запрос отправлен
+78612 [pool-2-thread-15] INFO  log.Log - Отправка запроса
+78612 [pool-2-thread-15] INFO  log.Log - Сериализация ответа
+78612 [pool-2-thread-15] INFO  log.Log - Запрос отправлен
+78612 [pool-2-thread-14] INFO  log.Log - Отправка запроса
+78612 [pool-2-thread-14] INFO  log.Log - Сериализация ответа
+78612 [pool-2-thread-14] INFO  log.Log - Запрос отправлен
+78612 [pool-2-thread-13] INFO  log.Log - Отправка запроса
+78613 [pool-2-thread-13] INFO  log.Log - Сериализация ответа
+78613 [pool-2-thread-13] INFO  log.Log - Запрос отправлен
+78613 [pool-2-thread-12] INFO  log.Log - Отправка запроса
+78613 [pool-2-thread-12] INFO  log.Log - Сериализация ответа
+78613 [pool-2-thread-12] INFO  log.Log - Запрос отправлен
+78613 [pool-2-thread-11] INFO  log.Log - Отправка запроса
+78613 [pool-2-thread-11] INFO  log.Log - Сериализация ответа
+78613 [pool-2-thread-11] INFO  log.Log - Запрос отправлен
+78613 [pool-2-thread-10] INFO  log.Log - Отправка запроса
+78613 [pool-2-thread-10] INFO  log.Log - Сериализация ответа
+78613 [pool-2-thread-10] INFO  log.Log - Запрос отправлен
+78613 [pool-2-thread-9] INFO  log.Log - Отправка запроса
+78613 [pool-2-thread-9] INFO  log.Log - Сериализация ответа
+78614 [pool-2-thread-9] INFO  log.Log - Запрос отправлен
+78614 [pool-2-thread-8] INFO  log.Log - Отправка запроса
+78614 [pool-2-thread-8] INFO  log.Log - Сериализация ответа
+78614 [pool-2-thread-8] INFO  log.Log - Запрос отправлен
+78614 [pool-2-thread-7] INFO  log.Log - Отправка запроса
+78614 [pool-2-thread-7] INFO  log.Log - Сериализация ответа
+78614 [pool-2-thread-7] INFO  log.Log - Запрос отправлен
+78614 [pool-2-thread-6] INFO  log.Log - Отправка запроса
+78614 [pool-2-thread-6] INFO  log.Log - Сериализация ответа
+78614 [pool-2-thread-6] INFO  log.Log - Запрос отправлен
+78614 [pool-2-thread-5] INFO  log.Log - Отправка запроса
+78615 [pool-2-thread-5] INFO  log.Log - Сериализация ответа
+78615 [pool-2-thread-5] INFO  log.Log - Запрос отправлен
+78615 [pool-2-thread-4] INFO  log.Log - Отправка запроса
+78615 [pool-2-thread-4] INFO  log.Log - Сериализация ответа
+78615 [pool-2-thread-4] INFO  log.Log - Запрос отправлен
+78615 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+78615 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+78615 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+78615 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+78615 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+78615 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+78615 [pool-2-thread-20] INFO  log.Log - Отправка запроса
+78615 [pool-2-thread-20] INFO  log.Log - Сериализация ответа
+78616 [pool-2-thread-20] INFO  log.Log - Запрос отправлен
+78616 [pool-2-thread-19] INFO  log.Log - Отправка запроса
+78616 [pool-2-thread-19] INFO  log.Log - Сериализация ответа
+78616 [pool-2-thread-19] INFO  log.Log - Запрос отправлен
+85576 [Thread-6] INFO  log.Log - Десериализация запроса
+85576 [Thread-7] INFO  log.Log - Десериализация запроса
+85576 [Thread-8] INFO  log.Log - Десериализация запроса
+85576 [Thread-7] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+85576 [Thread-8] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+85576 [Thread-6] INFO  log.Log - Получен запрос
+85577 [Thread-6] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=studygroup.User@1e4b0799, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:59805]}
+85577 [pool-1-thread-2] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+85577 [pool-1-thread-2] INFO  log.Log - Формирование запроса с отрицательным ответом
+85578 [pool-2-thread-19] INFO  log.Log - Отправка запроса
+85578 [pool-2-thread-19] INFO  log.Log - Сериализация ответа
+85579 [pool-2-thread-19] INFO  log.Log - Запрос отправлен
+85579 [pool-2-thread-23] INFO  log.Log - Отправка запроса
+85579 [pool-2-thread-23] INFO  log.Log - Сериализация ответа
+85579 [pool-2-thread-23] INFO  log.Log - Запрос отправлен
+85579 [pool-2-thread-22] INFO  log.Log - Отправка запроса
+85579 [pool-2-thread-22] INFO  log.Log - Сериализация ответа
+85579 [pool-2-thread-22] INFO  log.Log - Запрос отправлен
+85579 [pool-2-thread-21] INFO  log.Log - Отправка запроса
+85579 [pool-2-thread-21] INFO  log.Log - Сериализация ответа
+85579 [pool-2-thread-21] INFO  log.Log - Запрос отправлен
+85579 [pool-2-thread-18] INFO  log.Log - Отправка запроса
+85579 [pool-2-thread-18] INFO  log.Log - Сериализация ответа
+85580 [pool-2-thread-18] INFO  log.Log - Запрос отправлен
+85580 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+85580 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+85580 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+85580 [pool-2-thread-17] INFO  log.Log - Отправка запроса
+85580 [pool-2-thread-17] INFO  log.Log - Сериализация ответа
+85580 [pool-2-thread-17] INFO  log.Log - Запрос отправлен
+85580 [pool-2-thread-16] INFO  log.Log - Отправка запроса
+85580 [pool-2-thread-16] INFO  log.Log - Сериализация ответа
+85580 [pool-2-thread-16] INFO  log.Log - Запрос отправлен
+85580 [pool-2-thread-15] INFO  log.Log - Отправка запроса
+85580 [pool-2-thread-15] INFO  log.Log - Сериализация ответа
+85581 [pool-2-thread-15] INFO  log.Log - Запрос отправлен
+85581 [pool-2-thread-14] INFO  log.Log - Отправка запроса
+85581 [pool-2-thread-14] INFO  log.Log - Сериализация ответа
+85581 [pool-2-thread-14] INFO  log.Log - Запрос отправлен
+85581 [pool-2-thread-13] INFO  log.Log - Отправка запроса
+85581 [pool-2-thread-13] INFO  log.Log - Сериализация ответа
+85581 [pool-2-thread-13] INFO  log.Log - Запрос отправлен
+85581 [pool-2-thread-12] INFO  log.Log - Отправка запроса
+85581 [pool-2-thread-12] INFO  log.Log - Сериализация ответа
+85581 [pool-2-thread-12] INFO  log.Log - Запрос отправлен
+85581 [pool-2-thread-11] INFO  log.Log - Отправка запроса
+85581 [pool-2-thread-11] INFO  log.Log - Сериализация ответа
+85581 [pool-2-thread-11] INFO  log.Log - Запрос отправлен
+85581 [pool-2-thread-8] INFO  log.Log - Отправка запроса
+85581 [pool-2-thread-8] INFO  log.Log - Сериализация ответа
+85582 [pool-2-thread-8] INFO  log.Log - Запрос отправлен
+85582 [pool-2-thread-10] INFO  log.Log - Отправка запроса
+85582 [pool-2-thread-10] INFO  log.Log - Сериализация ответа
+85582 [pool-2-thread-10] INFO  log.Log - Запрос отправлен
+85582 [pool-2-thread-9] INFO  log.Log - Отправка запроса
+85582 [pool-2-thread-9] INFO  log.Log - Сериализация ответа
+85583 [pool-2-thread-9] INFO  log.Log - Запрос отправлен
+85583 [pool-2-thread-6] INFO  log.Log - Отправка запроса
+85583 [pool-2-thread-6] INFO  log.Log - Сериализация ответа
+85583 [pool-2-thread-6] INFO  log.Log - Запрос отправлен
+85583 [pool-2-thread-7] INFO  log.Log - Отправка запроса
+85583 [pool-2-thread-7] INFO  log.Log - Сериализация ответа
+85583 [pool-2-thread-7] INFO  log.Log - Запрос отправлен
+85583 [pool-2-thread-5] INFO  log.Log - Отправка запроса
+85583 [pool-2-thread-5] INFO  log.Log - Сериализация ответа
+85583 [pool-2-thread-5] INFO  log.Log - Запрос отправлен
+85584 [pool-2-thread-4] INFO  log.Log - Отправка запроса
+85584 [pool-2-thread-4] INFO  log.Log - Сериализация ответа
+85584 [pool-2-thread-4] INFO  log.Log - Запрос отправлен
+85584 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+85584 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+85584 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+85584 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+85584 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+85584 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+85584 [pool-2-thread-20] INFO  log.Log - Отправка запроса
+85584 [pool-2-thread-20] INFO  log.Log - Сериализация ответа
+85584 [pool-2-thread-20] INFO  log.Log - Запрос отправлен
+85588 [pool-2-thread-26] INFO  log.Log - Отправка запроса
+85588 [pool-2-thread-26] INFO  log.Log - Сериализация ответа
+85588 [pool-2-thread-26] INFO  log.Log - Запрос отправлен
+85588 [pool-2-thread-25] INFO  log.Log - Отправка запроса
+85588 [pool-2-thread-25] INFO  log.Log - Сериализация ответа
+85588 [pool-2-thread-25] INFO  log.Log - Запрос отправлен
+85588 [pool-2-thread-24] INFO  log.Log - Отправка запроса
+85588 [pool-2-thread-24] INFO  log.Log - Сериализация ответа
+85589 [pool-2-thread-24] INFO  log.Log - Запрос отправлен
+124  [main] INFO  log.Log - Hello, world!
+613  [main] INFO  log.Log - Successfully connected to the data base.
+19653 [Thread-2] INFO  log.Log - Десериализация запроса
+19661 [Thread-2] INFO  log.Log - Получен запрос
+19662 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@1476c4a0, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:60003]}
+19669 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+19670 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+19671 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+21638 [Thread-3] INFO  log.Log - Десериализация запроса
+21638 [Thread-3] INFO  log.Log - Получен запрос
+21638 [Thread-3] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=studygroup.User@799a0922, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:60003]}
+21640 [pool-1-thread-2] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+21640 [pool-1-thread-2] INFO  log.Log - Формирование запроса с отрицательным ответом
+21640 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+21640 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+21641 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+21642 [Thread-4] INFO  log.Log - Десериализация запроса
+21642 [Thread-4] INFO  log.Log - Получен запрос
+21642 [Thread-4] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='show', studyGroup=null, user=studygroup.User@4802fb90, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:60003]}
+21644 [pool-1-thread-3] INFO  log.Log - Попытка обработать команду show
+21648 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+21648 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+21649 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+121  [main] INFO  log.Log - Hello, world!
+526  [main] INFO  log.Log - Successfully connected to the data base.
+17594 [Thread-2] INFO  log.Log - Десериализация запроса
+17604 [Thread-2] INFO  log.Log - Получен запрос
+17605 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@1476c4a0, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:61655]}
+17610 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+17610 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+17613 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+127  [main] INFO  log.Log - Hello, world!
+543  [main] INFO  log.Log - Successfully connected to the data base.
+8533 [Thread-2] INFO  log.Log - Десериализация запроса
+8542 [Thread-2] INFO  log.Log - Получен запрос
+8542 [Thread-2] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=null, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+8543 [pool-1-thread-1] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+8543 [pool-1-thread-1] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$1(Application.java:140), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)]
+8544 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+8544 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+8545 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+35923626 [Thread-3] INFO  log.Log - Десериализация запроса
+35923640 [Thread-3] INFO  log.Log - Получен запрос
+35923641 [Thread-3] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@1118a4dd, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+35923657 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+35923657 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+35923657 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+35928601 [Thread-4] INFO  log.Log - Десериализация запроса
+35928601 [Thread-4] INFO  log.Log - Получен запрос
+35928601 [Thread-4] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='help', studyGroup=null, user=studygroup.User@2dfdc89, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+35928602 [pool-1-thread-3] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+35928602 [pool-1-thread-3] INFO  log.Log - Формирование запроса с отрицательным ответом
+35928603 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+35928603 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+35928603 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+35928603 [Thread-5] INFO  log.Log - Десериализация запроса
+35928604 [Thread-5] INFO  log.Log - Получен запрос
+35928604 [Thread-5] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='help', studyGroup=null, user=studygroup.User@1a720d65, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+35928607 [pool-1-thread-4] INFO  log.Log - Попытка обработать команду help
+35928607 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+35928607 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+35928607 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+35955614 [Thread-6] INFO  log.Log - Десериализация запроса
+35955615 [Thread-6] INFO  log.Log - Получен запрос
+35955615 [Thread-6] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='clear', studyGroup=null, user=studygroup.User@e0974f0, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+35955616 [pool-1-thread-5] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+35955616 [pool-1-thread-5] INFO  log.Log - Формирование запроса с отрицательным ответом
+35955616 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+35955616 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+35955616 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+35955617 [Thread-7] INFO  log.Log - Десериализация запроса
+35955617 [Thread-7] INFO  log.Log - Получен запрос
+35955617 [Thread-7] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='clear', studyGroup=null, user=studygroup.User@5e4324e6, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+35955618 [pool-1-thread-1] INFO  log.Log - Попытка обработать команду clear
+35955635 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+35955635 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+35955635 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+35966619 [Thread-8] INFO  log.Log - Десериализация запроса
+35966620 [Thread-8] INFO  log.Log - Получен запрос
+35966620 [Thread-8] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='add', studyGroup=null, user=studygroup.User@7f7e8817, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+35966621 [pool-1-thread-2] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+35966621 [pool-1-thread-2] INFO  log.Log - Формирование запроса с положительным ответом
+35966621 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+35966621 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+35966621 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+36144714 [Thread-9] INFO  log.Log - Десериализация запроса
+36144720 [Thread-9] INFO  log.Log - Получен запрос
+36144720 [Thread-9] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='add', studyGroup=studygroup.StudyGroup@4543dee6, user=studygroup.User@5c14034, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36144721 [pool-1-thread-3] INFO  log.Log - Попытка обработать команду add
+36144737 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+36144737 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+36144738 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+36180718 [Thread-10] INFO  log.Log - Десериализация запроса
+36180720 [Thread-10] INFO  log.Log - Получен запрос
+36180720 [Thread-10] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='add', studyGroup=null, user=studygroup.User@3dda9043, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36180721 [pool-1-thread-4] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+36180721 [pool-1-thread-4] INFO  log.Log - Формирование запроса с положительным ответом
+36180721 [pool-2-thread-3] INFO  log.Log - Отправка запроса
+36180721 [pool-2-thread-3] INFO  log.Log - Сериализация ответа
+36180721 [pool-2-thread-3] INFO  log.Log - Запрос отправлен
+36398832 [Thread-11] INFO  log.Log - Десериализация запроса
+36398833 [Thread-11] INFO  log.Log - Получен запрос
+36398833 [Thread-11] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='add', studyGroup=studygroup.StudyGroup@3c1d4910, user=studygroup.User@32daa0e3, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36398834 [pool-1-thread-5] INFO  log.Log - Попытка обработать команду add
+36398835 [pool-2-thread-4] INFO  log.Log - Отправка запроса
+36398835 [pool-2-thread-4] INFO  log.Log - Сериализация ответа
+36398835 [pool-2-thread-4] INFO  log.Log - Запрос отправлен
+36611933 [Thread-12] INFO  log.Log - Десериализация запроса
+36611933 [Thread-12] INFO  log.Log - Получен запрос
+36611933 [Thread-12] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='help', studyGroup=null, user=studygroup.User@3e73d4e7, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36611934 [pool-1-thread-1] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+36611934 [pool-1-thread-1] INFO  log.Log - Формирование запроса с отрицательным ответом
+36611934 [pool-2-thread-5] INFO  log.Log - Отправка запроса
+36611934 [pool-2-thread-5] INFO  log.Log - Сериализация ответа
+36611935 [pool-2-thread-5] INFO  log.Log - Запрос отправлен
+36611935 [Thread-13] INFO  log.Log - Десериализация запроса
+36611936 [Thread-13] INFO  log.Log - Получен запрос
+36611936 [Thread-13] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='help', studyGroup=null, user=studygroup.User@70882ba3, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36611936 [pool-1-thread-2] INFO  log.Log - Попытка обработать команду help
+36611937 [pool-2-thread-5] INFO  log.Log - Отправка запроса
+36611937 [pool-2-thread-5] INFO  log.Log - Сериализация ответа
+36611937 [pool-2-thread-5] INFO  log.Log - Запрос отправлен
+36629940 [Thread-14] INFO  log.Log - Десериализация запроса
+36629941 [Thread-14] INFO  log.Log - Получен запрос
+36629941 [Thread-14] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='print_ascending', studyGroup=null, user=studygroup.User@56ccf6ab, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36629941 [pool-1-thread-3] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+36629942 [pool-1-thread-3] INFO  log.Log - Формирование запроса с отрицательным ответом
+36629942 [pool-2-thread-5] INFO  log.Log - Отправка запроса
+36629942 [pool-2-thread-5] INFO  log.Log - Сериализация ответа
+36629942 [pool-2-thread-5] INFO  log.Log - Запрос отправлен
+36629943 [Thread-15] INFO  log.Log - Десериализация запроса
+36629943 [Thread-15] INFO  log.Log - Получен запрос
+36629943 [Thread-15] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='print_ascending', studyGroup=null, user=studygroup.User@4026b138, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:63117]}
+36629944 [pool-1-thread-4] INFO  log.Log - Попытка обработать команду print_ascending
+36629948 [pool-2-thread-5] INFO  log.Log - Отправка запроса
+36629948 [pool-2-thread-5] INFO  log.Log - Сериализация ответа
+36629948 [pool-2-thread-5] INFO  log.Log - Запрос отправлен
+41215254 [Thread-16] INFO  log.Log - Десериализация запроса
+41215264 [Thread-16] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)

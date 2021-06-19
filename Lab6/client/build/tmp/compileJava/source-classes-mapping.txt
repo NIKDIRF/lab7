@@ -1,17 +1,17 @@
-io/StudygroupParser.java
- io.StudygroupParser
+io/Reader.java
+ io.Reader
 connection/ConnectionManagerImpl.java
  connection.ConnectionManagerImpl
-commands/ExecuteScriptCommand.java
- commands.ExecuteScriptCommand
+commands/LoginCommand.java
+ commands.LoginCommand
 commands/ClientHelpCommand.java
  commands.ClientHelpCommand
-io/StudygroupScriptParser.java
- io.StudygroupScriptParser
-client/Main.java
- client.Main
-client/Application.java
- client.Application
+request/RequestSenderImpl.java
+ request.RequestSenderImpl
+client/AuthModule.java
+ client.AuthModule
+locale/ClientLocale.java
+ locale.ClientLocale
 commands/CommandInvoker.java
  commands.CommandInvoker
 request/RequestCreator.java
@@ -22,19 +22,19 @@ commands/RegisterCommand.java
  commands.RegisterCommand
 connection/ConnectionManager.java
  connection.ConnectionManager
-commands/ExitCommand.java
- commands.ExitCommand
-response/ResponseReader.java
- response.ResponseReader
-locale/ClientLocale.java
- locale.ClientLocale
-client/AuthModule.java
- client.AuthModule
-request/RequestSenderImpl.java
- request.RequestSenderImpl
-commands/LoginCommand.java
- commands.LoginCommand
 response/ResponseReaderImpl.java
  response.ResponseReaderImpl
-io/Reader.java
- io.Reader
+response/ResponseReader.java
+ response.ResponseReader
+io/StudygroupParser.java
+ io.StudygroupParser
+commands/ExitCommand.java
+ commands.ExitCommand
+commands/ExecuteScriptCommand.java
+ commands.ExecuteScriptCommand
+io/StudygroupScriptParser.java
+ io.StudygroupScriptParser
+client/Main.java
+ client.Main
+client/Application.java
+ client.Application

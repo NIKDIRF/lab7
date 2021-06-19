@@ -2,8 +2,8 @@ connection/ConnectionListener.java
  connection.ConnectionListener
 file/UserAuthModule.java
  file.UserAuthModule
-command/HistoryCommand.java
- command.HistoryCommand
+connection/ConnectionListenerAdvanced.java
+ connection.ConnectionListenerAdvanced
 command/CommandInvoker.java
  command.CommandInvoker
 command/InfoCommand.java
@@ -24,8 +24,8 @@ file/UsersDAO.java
  file.UsersDAO
 command/UpdateCommand.java
  command.UpdateCommand
-response/ResponseCreator.java
- response.ResponseCreator
+command/PrintAscendingCommand.java
+ command.PrintAscendingCommand
 file/PSQLStudyGroupDAO.java
  file.PSQLStudyGroupDAO
 connection/ConnectionListenerImpl.java
@@ -42,8 +42,8 @@ file/DataManager.java
  file.DataManager
 command/RemoveByIdCommand.java
  command.RemoveByIdCommand
-command/HelpCommand.java
- command.HelpCommand
+log/Log.java
+ log.Log
 locale/ServerBundle.java
  locale.ServerBundle
 response/ResponseSender.java
@@ -64,26 +64,26 @@ file/PSQLUsersDAO.java
  file.PSQLUsersDAO
 request/RequestReaderImpl.java
  request.RequestReaderImpl
-response/Creator.java
- response.Creator
+request/RequestHandler.java
+ request.RequestHandler
 command/ClearCommand.java
  command.ClearCommand
 collection/CollectionControl.java
  collection.CollectionControl
 command/ServerCommand.java
  command.ServerCommand
-request/RequestHandler.java
- request.RequestHandler
-connection/ConnectionListenerAdvanced.java
- connection.ConnectionListenerAdvanced
-log/Log.java
- log.Log
-request/RequestHandlerImpl.java
- request.RequestHandlerImpl
-command/PrintAscendingCommand.java
- command.PrintAscendingCommand
+command/HelpCommand.java
+ command.HelpCommand
+response/Creator.java
+ response.Creator
 collection/HashSetControl.java
  collection.HashSetControl
+request/RequestHandlerImpl.java
+ request.RequestHandlerImpl
+response/ResponseCreator.java
+ response.ResponseCreator
+command/HistoryCommand.java
+ command.HistoryCommand
 server/Application.java
  server.Application
 server/Server.java
