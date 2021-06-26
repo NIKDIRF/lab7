@@ -3068,3 +3068,116 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
 	at server.Application.lambda$readRequest$0(Application.java:127)
 	at java.lang.Thread.run(Thread.java:748)
+176  [main] INFO  log.Log - Hello, world!
+649  [main] INFO  log.Log - Successfully connected to the data base.
+70835 [Thread-2] INFO  log.Log - Десериализация запроса
+70843 [Thread-2] INFO  log.Log - Получен запрос
+70844 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@2982e5a4, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49252]}
+70855 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+70855 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+70856 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+88821 [Thread-3] INFO  log.Log - Десериализация запроса
+88821 [Thread-3] INFO  log.Log - Получен запрос
+88821 [Thread-3] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=null, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49252]}
+88822 [pool-1-thread-2] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+88822 [pool-1-thread-2] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$1(Application.java:140), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)]
+88822 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+88822 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+88823 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+134838 [Thread-4] INFO  log.Log - Десериализация запроса
+134839 [Thread-4] INFO  log.Log - Получен запрос
+134839 [Thread-4] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='', studyGroup=null, user=null, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49252]}
+134839 [pool-1-thread-3] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+134839 [pool-1-thread-3] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$1(Application.java:140), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)]
+134839 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+134839 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+134840 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+156845 [Thread-5] INFO  log.Log - Десериализация запроса
+156846 [Thread-5] INFO  log.Log - Получен запрос
+156846 [Thread-5] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@1a720d65, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49252]}
+156847 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+156847 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+156847 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+175853 [Thread-6] INFO  log.Log - Десериализация запроса
+175853 [Thread-6] INFO  log.Log - Получен запрос
+175853 [Thread-6] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@6db6dcba, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49252]}
+175854 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+175854 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+175854 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+126  [main] INFO  log.Log - Hello, world!
+502  [main] INFO  log.Log - Successfully connected to the data base.
+17815 [Thread-2] INFO  log.Log - Десериализация запроса
+17823 [Thread-2] INFO  log.Log - Получен запрос
+17824 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@2f9d386d, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49511]}
+17830 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+17830 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+17831 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+172855 [Thread-3] INFO  log.Log - Десериализация запроса
+172855 [Thread-3] INFO  log.Log - Получен запрос
+172855 [Thread-3] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@799a0922, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49511]}
+172856 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+172856 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+172857 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+176858 [Thread-4] INFO  log.Log - Десериализация запроса
+176862 [Thread-4] ERROR log.Log - error
+java.io.StreamCorruptedException: invalid stream header: 00000000
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:938)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+	at request.RequestReaderImpl.deserializeRequest(RequestReaderImpl.java:42)
+	at request.RequestReaderImpl.getRequest(RequestReaderImpl.java:35)
+	at server.Application.lambda$readRequest$0(Application.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+119  [main] INFO  log.Log - Hello, world!
+477  [main] INFO  log.Log - Successfully connected to the data base.
+39625 [Thread-2] INFO  log.Log - Десериализация запроса
+39634 [Thread-2] INFO  log.Log - Получен запрос
+39634 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@2f9d386d, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49784]}
+39640 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+39640 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+39641 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+54615 [Thread-3] INFO  log.Log - Десериализация запроса
+54615 [Thread-3] INFO  log.Log - Получен запрос
+54615 [Thread-3] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=null, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49784]}
+54616 [pool-1-thread-2] ERROR log.Log - exception.AuthException: Вы не авторизованы.
+54616 [pool-1-thread-2] ERROR log.Log - [request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:48), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$1(Application.java:140), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)]
+54616 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+54616 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+54617 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+113  [main] INFO  log.Log - Hello, world!
+490  [main] INFO  log.Log - Successfully connected to the data base.
+18608 [Thread-2] INFO  log.Log - Десериализация запроса
+18616 [Thread-2] INFO  log.Log - Получен запрос
+18617 [Thread-2] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@1476c4a0, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49999]}
+18622 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+18623 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+18624 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+36597 [Thread-3] INFO  log.Log - Десериализация запроса
+36598 [Thread-3] INFO  log.Log - Получен запрос
+36598 [Thread-3] INFO  log.Log - Request{type=LOGIN, userString='null', studyGroup=null, user=studygroup.User@5e885ae0, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49999]}
+36599 [pool-2-thread-1] INFO  log.Log - Отправка запроса
+36599 [pool-2-thread-1] INFO  log.Log - Сериализация ответа
+36599 [pool-2-thread-1] INFO  log.Log - Запрос отправлен
+1138110 [Thread-4] INFO  log.Log - Десериализация запроса
+1138110 [Thread-4] INFO  log.Log - Получен запрос
+1138111 [Thread-4] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='how', studyGroup=null, user=studygroup.User@655ea66b, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49999]}
+1138112 [pool-1-thread-3] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+1138112 [pool-1-thread-3] ERROR log.Log - exception.CommandNotFoundException: команда не найдена: how
+1138112 [pool-1-thread-3] ERROR log.Log - [command.CommandInvoker.checkStudyGroupRequirement(CommandInvoker.java:96), request.RequestHandlerImpl.handleStudyGroupRequest(RequestHandlerImpl.java:51), request.RequestHandlerImpl.handleRequest(RequestHandlerImpl.java:35), server.Application.lambda$handleRequest$1(Application.java:140), java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511), java.util.concurrent.FutureTask.run(FutureTask.java:266), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)]
+1138112 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+1138112 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+1138113 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+1142112 [Thread-5] INFO  log.Log - Десериализация запроса
+1142113 [Thread-5] INFO  log.Log - Получен запрос
+1142113 [Thread-5] INFO  log.Log - Request{type=STUDYGROUP_REQUEST, userString='show', studyGroup=null, user=studygroup.User@695b86c1, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49999]}
+1142114 [pool-1-thread-4] INFO  log.Log - Клиент спрашивает, нужен ли объект коллекции для обработки этой команды
+1142114 [pool-1-thread-4] INFO  log.Log - Формирование запроса с отрицательным ответом
+1142114 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+1142114 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+1142114 [pool-2-thread-2] INFO  log.Log - Запрос отправлен
+1142115 [Thread-6] INFO  log.Log - Десериализация запроса
+1142115 [Thread-6] INFO  log.Log - Получен запрос
+1142116 [Thread-6] INFO  log.Log - Request{type=COMMAND_REQUEST, userString='show', studyGroup=null, user=studygroup.User@d30df76, locale=ru_RU, channel=java.nio.channels.SocketChannel[connected local=/127.0.0.1:60000 remote=/127.0.0.1:49999]}
+1142117 [pool-1-thread-5] INFO  log.Log - Попытка обработать команду show
+1142122 [pool-2-thread-2] INFO  log.Log - Отправка запроса
+1142122 [pool-2-thread-2] INFO  log.Log - Сериализация ответа
+1142122 [pool-2-thread-2] INFO  log.Log - Запрос отправлен

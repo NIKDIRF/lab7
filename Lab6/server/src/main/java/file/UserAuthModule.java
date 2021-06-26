@@ -22,11 +22,14 @@ public class UserAuthModule {
             reason = ServerBundle.getString("auth.incorrect_username_or_password");
             this.user = null;
             return false;
-        } else if(cryptoModule.hash(authUser.getPassword()).equals(cryptoModule.hash(user.getPassword()))) {
+        } else if(authUser.getPassword().equals(cryptoModule.hash(user.getPassword()))) {
             this.user = user;
             reason = "";
+            return true;
+        } else {
+            reason = ServerBundle.getString("auth.incorrect_username_or_password");
+            return false;
         }
-        return true;
     }
 
     public boolean registerUser(User user) {

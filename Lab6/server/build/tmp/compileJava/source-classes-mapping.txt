@@ -1,7 +1,7 @@
 connection/ConnectionListener.java
  connection.ConnectionListener
-file/UserAuthModule.java
- file.UserAuthModule
+command/ExitCommand.java
+ command.ExitCommand
 connection/ConnectionListenerAdvanced.java
  connection.ConnectionListenerAdvanced
 command/CommandInvoker.java
@@ -78,15 +78,15 @@ response/Creator.java
  response.Creator
 collection/HashSetControl.java
  collection.HashSetControl
-request/RequestHandlerImpl.java
- request.RequestHandlerImpl
+server/Server.java
+ server.Server
 response/ResponseCreator.java
  response.ResponseCreator
 command/HistoryCommand.java
  command.HistoryCommand
+file/UserAuthModule.java
+ file.UserAuthModule
 server/Application.java
  server.Application
-server/Server.java
- server.Server
-command/ExitCommand.java
- command.ExitCommand
+request/RequestHandlerImpl.java
+ request.RequestHandlerImpl
